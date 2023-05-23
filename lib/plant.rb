@@ -1,5 +1,10 @@
 class Plant
-  attr_accessor :garden, :name
+  attr_accessor :name
+   def initialize(attributes)
+    @name = attributes[:name]
+  end
+end
+
 
   @@all = []
 
@@ -12,3 +17,4 @@ class Plant
     @@all
   end
 end
+
